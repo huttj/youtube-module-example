@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Top 10 Songs on Itunes</title>
+  </head>
+  <body>
+
+    <div class="videos">
+      <h1>Loading...</h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- We can use RawGit as a poor-dev's CDN -->
+    <script src="https://rawgit.com/abdmob/x2js/master/xml2json.min.js"></script>
+
+    <!-- Include all the modules in the page, each one BEFORE those that depend on it -->
+    <!-- In this case, youtube.js depends on apiKeys.js, so apiKeys.js has to come first. -->
+    <script type="text/javascript" src="tracks.js"></script>
+    <script type="text/javascript" src="apiKeys.js"></script>
+    <script type="text/javascript" src="youtube.js"></script>
+
+    <!-- Include the main app script last, as it will run after everything else is loaded. -->
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
