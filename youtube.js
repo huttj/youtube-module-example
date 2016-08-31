@@ -7,7 +7,7 @@ var YouTube = {};
 
 // These variables live on the module. The module's functions can see them, but
 // so can everyone else.
-YouTube.API_KEY  = YOUTUBE_API_KEY;
+YouTube.API_KEY  = typeof YOUTUBE_API_KEY === 'undefined' ? prompt('Enter your YouTube API key') : YOUTUBE_API_KEY;
 YouTube.BASE_URL = 'https://www.googleapis.com/youtube/v3/';
 
 // Use the YouTube API to search for videos by a single search term
